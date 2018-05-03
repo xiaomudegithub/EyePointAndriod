@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="邮箱验证"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="44dp"
+            android:id="@+id/titleText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/titleText"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="请输入邮箱"
+            android:id="@+id/email_text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/email_text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/email_btn"
+            android:layout_marginTop="10dp"
+            android:hint="请输入验证码"
+            android:id="@+id/code_text"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:layout_alignTop="@id/code_text"
+            android:layout_alignBottom="@id/code_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:id="@+id/email_btn"
+            android:text="获取验证码"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/code_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/register_reset_btn"
+            android:text="验证"/>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
